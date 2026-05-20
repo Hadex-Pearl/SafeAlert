@@ -1,0 +1,7 @@
+openai
+pandas
+jupyter
+python-dotenv
+tqdm
+matplotlib
+seaborn
