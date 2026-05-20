@@ -1,0 +1,5 @@
+.env
+results/raw/
+results/scored/
+dataset/private/
+context.md
