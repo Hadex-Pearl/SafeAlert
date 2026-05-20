@@ -134,8 +134,7 @@ Results are produced for each model before and after the remediation step, with 
 
 ```
 safealert/
-  context.md                        ← technical reference for coding assistants
-  dataset/
+  dataset/public
     safealert_dataset_v1.csv
     safealert_dataset_v1.json
   results/
@@ -161,9 +160,9 @@ safealert/
 If you use SafeAlert in your research, please cite:
 
 ```bibtex
-@misc{yusuf2026safealert,
+@misc{uduimoh2026safealert,
   title     = {SafeAlert: Lightweight Pre-Procurement Safety Test Suite for AI Models in Nigerian Mobile Money and Fintech Systems},
-  author    = {Yusuf, Hadiza and Uduimoh, Andrew},
+  author    = {Uduimoh, Andrew and Yusuf, Hadiza},
   year      = {2026},
   note      = {Africa AI Safety Prize Competition, CASA},
   url       = {https://github.com/[username]/safealert}
