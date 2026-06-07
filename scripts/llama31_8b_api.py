@@ -3,11 +3,9 @@
 from __future__ import annotations
 
 import argparse
-import json
 import os
 import time
 from dataclasses import dataclass
-from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
@@ -17,8 +15,10 @@ from openai import APIStatusError, APITimeoutError, OpenAI, RateLimitError
 
 try:
     from prompt_loader import load_prompts
+    from response_recorder import RawResponsePayload, save_raw_response
 except ModuleNotFoundError:
     from scripts.prompt_loader import load_prompts
+    from scripts.response_recorder import RawResponsePayload, save_raw_response
 
 
 MODEL_NAME = "llama-3.1-8b"
@@ -165,46 +165,6 @@ class Llama31_8BClient:
         return _error_result(time.monotonic(), last_error or "Retries exhausted.")
 
 
-def append_response_record(output_path: str | Path, record: dict[str, Any]) -> None:
-    """Append one raw response record to a JSONL file."""
-    path = Path(output_path)
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("a", encoding="utf-8") as output_file:
-        output_file.write(json.dumps(record, ensure_ascii=False) + "\n")
-
-
-def build_raw_response_record(
-    prompt: pd.Series | dict[str, Any],
-    result: APIResult,
-    run_id: str,
-    run_type: str,
-) -> dict[str, Any]:
-    """Build the SafeAlert raw JSONL record for one prompt result."""
-    prompt_data = prompt.to_dict() if isinstance(prompt, pd.Series) else dict(prompt)
-    return {
-        "run_id": run_id,
-        "prompt_id": prompt_data["id"],
-        "prompt_type": prompt_data["type"],
-        "category": int(prompt_data["category"]),
-        "category_name": prompt_data["category_name"],
-        "ground_truth_label": prompt_data["label"],
-        "target_behaviour": prompt_data["target_behaviour"],
-        "model": MODEL_NAME,
-        "run_type": run_type,
-        "timestamp_utc": _utc_timestamp(),
-        "prompt_text": prompt_data["message"],
-        "raw_response": result.raw_response,
-        "response_tokens": result.response_tokens,
-        "api_latency_ms": result.api_latency_ms,
-        "api_status": result.api_status,
-        "rubric_verdict": "",
-        "score": None,
-        "label_assigned": "",
-        "error_type": "",
-        "reviewer_notes": result.error_message,
-    }
-
-
 def call_and_log_prompt(
     prompt: pd.Series | dict[str, Any],
     client: Llama31_8BClient,
@@ -216,9 +176,20 @@ def call_and_log_prompt(
     """Call Llama 3.1 8B for one prompt and append its raw JSONL record."""
     prompt_text = prompt["message"]
     result = client.call_prompt(str(prompt_text), system_prompt=system_prompt)
-    record = build_raw_response_record(prompt, result, run_id=run_id, run_type=run_type)
-    append_response_record(output_path, record)
-    return record
+    return save_raw_response(
+        output_path=output_path,
+        prompt=prompt,
+        payload=RawResponsePayload(
+            raw_response=result.raw_response,
+            response_tokens=result.response_tokens,
+            api_latency_ms=result.api_latency_ms,
+            api_status=result.api_status,
+            reviewer_notes=result.error_message,
+        ),
+        run_id=run_id,
+        model=MODEL_NAME,
+        run_type=run_type,
+    )
 
 
 def run_prompts(
@@ -291,10 +262,6 @@ def _elapsed_ms(start_time: float) -> int:
 
 def _format_error(exc: Exception) -> str:
     return f"{type(exc).__name__}: {exc}"
-
-
-def _utc_timestamp() -> str:
-    return datetime.now(UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
 
 def main() -> None:
