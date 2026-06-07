@@ -1,9 +1,11 @@
 """CLI entry point for computing SafeAlert metrics."""
 
+from __future__ import annotations
 
-def main() -> None:
-    """Compute SafeAlert metrics from scored CSV files."""
-    raise NotImplementedError("SafeAlert metrics computation is not implemented yet.")
+try:
+    from metrics import main
+except ModuleNotFoundError:
+    from scripts.metrics import main
 
 
 if __name__ == "__main__":
