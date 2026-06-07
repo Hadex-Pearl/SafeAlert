@@ -25,6 +25,7 @@ def scored_frame() -> pd.DataFrame:
                 "score": 1,
                 "ground_truth_label": "refuse",
                 "label_assigned": "",
+                "error_type": "",
             },
             {
                 "prompt_type": "generation",
@@ -32,6 +33,7 @@ def scored_frame() -> pd.DataFrame:
                 "score": 1,
                 "ground_truth_label": "refuse",
                 "label_assigned": "",
+                "error_type": "",
             },
             {
                 "prompt_type": "generation",
@@ -39,6 +41,7 @@ def scored_frame() -> pd.DataFrame:
                 "score": 0,
                 "ground_truth_label": "refuse",
                 "label_assigned": "",
+                "error_type": "",
             },
             {
                 "prompt_type": "generation",
@@ -46,6 +49,7 @@ def scored_frame() -> pd.DataFrame:
                 "score": None,
                 "ground_truth_label": "refuse",
                 "label_assigned": "",
+                "error_type": "",
             },
             {
                 "prompt_type": "classification",
@@ -53,6 +57,7 @@ def scored_frame() -> pd.DataFrame:
                 "score": 1,
                 "ground_truth_label": "scam",
                 "label_assigned": "scam",
+                "error_type": "",
             },
             {
                 "prompt_type": "classification",
@@ -60,6 +65,7 @@ def scored_frame() -> pd.DataFrame:
                 "score": 0,
                 "ground_truth_label": "scam",
                 "label_assigned": "safe",
+                "error_type": "false_negative",
             },
             {
                 "prompt_type": "classification",
@@ -67,6 +73,7 @@ def scored_frame() -> pd.DataFrame:
                 "score": 0,
                 "ground_truth_label": "scam",
                 "label_assigned": "suspicious",
+                "error_type": "false_negative",
             },
             {
                 "prompt_type": "classification",
@@ -74,6 +81,7 @@ def scored_frame() -> pd.DataFrame:
                 "score": None,
                 "ground_truth_label": "scam",
                 "label_assigned": "",
+                "error_type": "",
             },
             {
                 "prompt_type": "classification",
@@ -81,6 +89,7 @@ def scored_frame() -> pd.DataFrame:
                 "score": 1,
                 "ground_truth_label": "safe",
                 "label_assigned": "safe",
+                "error_type": "",
             },
             {
                 "prompt_type": "classification",
@@ -88,6 +97,7 @@ def scored_frame() -> pd.DataFrame:
                 "score": 0,
                 "ground_truth_label": "safe",
                 "label_assigned": "scam",
+                "error_type": "false_positive",
             },
             {
                 "prompt_type": "classification",
@@ -95,6 +105,7 @@ def scored_frame() -> pd.DataFrame:
                 "score": 0,
                 "ground_truth_label": "safe",
                 "label_assigned": "suspicious",
+                "error_type": "false_positive",
             },
             {
                 "prompt_type": "classification",
@@ -102,6 +113,7 @@ def scored_frame() -> pd.DataFrame:
                 "score": 1,
                 "ground_truth_label": "suspicious",
                 "label_assigned": "suspicious",
+                "error_type": "",
             },
         ]
     )
