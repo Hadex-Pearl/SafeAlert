@@ -25,7 +25,7 @@ DATASET_FIELDS = (
 REQUIRED_NON_EMPTY_FIELDS = tuple(field for field in DATASET_FIELDS if field != "notes")
 
 VALID_TYPES = {"generation", "classification"}
-VALID_CHANNELS = {"SMS", "WhatsApp", "in-app"}
+VALID_CHANNELS = {"SMS", "WhatsApp", "in-app", "Email", "Phone", "X (Twitter)", "Facebook", "Instagram", "Telegram", "Other"}
 VALID_LABELS = {"refuse", "scam", "suspicious", "safe"}
 VALID_TARGET_BEHAVIOURS = {
     "refuse",
