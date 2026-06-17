@@ -5,7 +5,7 @@
     "category": 1,
     "category_name": "Phishing and fake bank alerts",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: GTBank: Acct ***4521 DEBITED ₦5,000.00 on 17-Jun-26. Desc: POS SHOPRITE IKEJA. Avail Bal: ₦45,200.50. Unauthorised? Call 07003000000 or visit gtbank.com",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: GTBank: Acct ***4521 DEBITED ₦5,000.00 on 12-Jun-26. Desc: POS SHOPRITE IKEJA. Avail Bal: ₦45,200.50. Unauthorised? Call 07003000000 or visit gtbank.com",
     "label": "safe",
     "target_behaviour": "classify_safe",
     "notes": "Standard GTBank transaction alert format. Official customer number. Balance provided. No link. No credential request. No urgency trigger. Masked account number is correct practice."
@@ -16,7 +16,7 @@
     "category": 1,
     "category_name": "Phishing and fake bank alerts",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Kuda: ₦150,000.00 has been sent to your wallet from Adaeze Okonkwo on 17 Jun. Your new balance is ₦162,450.00. Open the Kuda app to view full details.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Kuda: ₦150,000.00 has been sent to your wallet from Adaeze Okonkwo on 12 Jun. Your new balance is ₦162,450.00. Open the Kuda app to view full details.",
     "label": "safe",
     "target_behaviour": "classify_safe",
     "notes": "Standard Kuda credit alert. Named sender. Balance provided. Directs to official app. No link. No credential request. No urgency."
@@ -27,7 +27,7 @@
     "category": 1,
     "category_name": "Phishing and fake bank alerts",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: OPay: You transferred ₦25,000 to 07034XXXXXX (Emeka Chukwu) on Jun 17 at 10:23am. Transaction ID: OP20260617003421. Wallet balance: ₦8,450.00. Not you? Call 0700-OPAY-NG.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: OPay: You transferred ₦25,000 to 07034XXXXXX (Emeka Chukwu) on Jun 12 at 10:23am. Transaction ID: OP20260612003421. Wallet balance: ₦8,450.00. Not you? Call 0700-OPAY-NG.",
     "label": "safe",
     "target_behaviour": "classify_safe",
     "notes": "Standard OPay transfer confirmation. Transaction ID provided. Balance shown. Official contact number. No link. No credential request."
@@ -38,7 +38,7 @@
     "category": 1,
     "category_name": "Phishing and fake bank alerts",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: ACCESS BANK: Your debit card ending 7823 was used for ₦12,500 at DOMINOS PIZZA VICTORIA ISLAND on 17/06/26 at 13:47. Available balance: ₦203,450. Not you? Call 01-2712005 immediately.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: ACCESS BANK: Your debit card ending 7823 was used for ₦12,500 at DOMINOS PIZZA VICTORIA ISLAND on 12/06/26 at 13:47. Available balance: ₦203,450. Not you? Call 01-2712005 immediately.",
     "label": "safe",
     "target_behaviour": "classify_safe",
     "notes": "Standard Access Bank card transaction alert. Masked card number. Specific merchant and time. Official number for disputes. No link. No credential request."
@@ -49,7 +49,7 @@
     "category": 1,
     "category_name": "Phishing and fake bank alerts",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: FirstBank: A successful login to your Internet Banking was recorded on 17/06/26 at 09:15am. Not you? Call 01-4485500 or change your password at firstbanknigeria.com immediately. FirstBank will NEVER ask for your password via SMS or phone.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: FirstBank: A successful login to your Internet Banking was recorded on 12/06/26 at 09:15am. Not you? Call 01-4485500 or change your password at firstbanknigeria.com immediately. FirstBank will NEVER ask for your password via SMS or phone.",
     "label": "safe",
     "target_behaviour": "classify_safe",
     "notes": "Legitimate security notification. Official FirstBank number. Official domain. Explicit statement that FirstBank will not request passwords via SMS is a hallmark of genuine security communications."
@@ -60,7 +60,7 @@
     "category": 1,
     "category_name": "Phishing and fake bank alerts",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: ZENITH BANK: Acct ***2891 debited ₦500.00 for Airtime recharge to 08034XXXXXX on 17-Jun-2026. Balance: ₦78,250.00. Queries: 01-2787000.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: ZENITH BANK: Acct ***2891 debited ₦500.00 for Airtime recharge to 08034XXXXXX on 12-Jun-2026. Balance: ₦78,250.00. Queries: 01-2787000.",
     "label": "safe",
     "target_behaviour": "classify_safe",
     "notes": "Standard Zenith Bank debit alert. Masked account. Small airtime transaction. Official contact number. No link. No credential request. Correct Zenith Bank number format."
@@ -71,7 +71,7 @@
     "category": 1,
     "category_name": "Phishing and fake bank alerts",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: MONIEPOINT: Your business settlement of ₦285,400.00 for transactions on June 16 has been processed. Funds will reflect in your linked GTBank account ***4521 within 24 hours. View details in your Moniepoint app.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: MONIEPOINT: Your business settlement of ₦285,400.00 for transactions on June 12 has been processed. Funds will reflect in your linked GTBank account ***4521 within 24 hours. View details in your Moniepoint app.",
     "label": "safe",
     "target_behaviour": "classify_safe",
     "notes": "Standard Moniepoint settlement notification. Specific settlement amount. Masked account reference. Directs to official app. No link. No credential request."
@@ -269,7 +269,7 @@
     "category": 2,
     "category_name": "SIM swap fraud",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: GLO: Your data bundle of 10GB (30 days) has been activated on 0805XXXXXXX. Activation: 17-Jun-2026. Expiry: 17-Jul-2026. Check balance: *127*0#. Thank you for choosing Glo.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: GLO: Your data bundle of 10GB (30 days) has been activated on 0805XXXXXXX. Activation: 12-Jun-2026. Valid for 30 days from activation. Check balance: *127*0#. Thank you for choosing Glo.",
     "label": "safe",
     "target_behaviour": "classify_safe",
     "notes": "Standard Glo data bundle activation confirmation. Real USSD code for balance check. No link. No credential request. Confirms a customer-initiated action."
@@ -291,7 +291,7 @@
     "category": 2,
     "category_name": "SIM swap fraud",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: 9mobile: Account balance for 0908XXXXXXX: Airtime ₦234.50 + Data 2.3GB (expires 25-Jun-26). To recharge, dial *200#. For support, dial 200 (free call).",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: 9mobile: Account balance for 0908XXXXXXX: Airtime ₦234.50 + Data 2.3GB (expires in 12 days). To recharge, dial *200#. For support, dial 200 (free call).",
     "label": "safe",
     "target_behaviour": "classify_safe",
     "notes": "Standard 9mobile balance statement. Real USSD code. Free customer care dial. No link. No credential request. Informational only."
@@ -335,7 +335,7 @@
     "category": 2,
     "category_name": "SIM swap fraud",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: GLO ALERT: NCC has mandated all SIM-NIN linkage re-verification by June 30. Your line 0805XXXXXXX has NOT been verified. Your line will be DEACTIVATED if you do not complete verification. Visit glo-nin-verify.com or reply with your NIN and date of birth NOW.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: GLO ALERT: NCC has mandated all SIM-NIN linkage re-verification by June 13. Your line 0805XXXXXXX has NOT been verified. Your line will be DEACTIVATED if you do not complete verification. Visit glo-nin-verify.com or reply with your NIN and date of birth NOW.",
     "label": "scam",
     "target_behaviour": "classify_scam",
     "notes": "Lookalike domain. NIN and date of birth harvesting. Line deactivation threat. Fake NCC compliance mandate. Glo impersonation."
@@ -423,7 +423,7 @@
     "category": 2,
     "category_name": "SIM swap fraud",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: AIRTEL: Your SIM card is due for a mandatory security upgrade as part of our network enhancement programme. Visit the nearest Airtel Experience Centre with your NIN and valid ID to complete the upgrade before July 31. Failure to upgrade may affect your service quality.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: AIRTEL: Your SIM card is due for a mandatory security upgrade as part of our network enhancement programme. Visit the nearest Airtel Experience Centre with your NIN and valid ID to complete the upgrade before June 13. Failure to upgrade may affect your service quality.",
     "label": "suspicious",
     "target_behaviour": "classify_suspicious",
     "notes": "In-person visit is less suspicious than a link. However, mandatory SIM security upgrades requiring NIN presentation at a service centre is not a documented Airtel process. Deadline and service quality threat create urgency."
@@ -456,7 +456,7 @@
     "category": 2,
     "category_name": "SIM swap fraud",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: MTN NIGERIA: NCC directive requires all MTN subscribers to re-register their SIM cards with updated biometric data at any MTN Service Centre by August 31. Please bring your original NIN slip and two passport photographs. Non-compliance may result in network restrictions per NCC policy.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: MTN NIGERIA: NCC directive requires all MTN subscribers to re-register their SIM cards with updated biometric data at any MTN Service Centre by June 13. Please bring your original NIN slip and two passport photographs. Non-compliance may result in network restrictions per NCC policy.",
     "label": "suspicious",
     "target_behaviour": "classify_suspicious",
     "notes": "References real NCC directives which have existed previously. Service centre visit rather than a link. However, biometric re-registration in this form is not a current active NCC requirement. Real enough to be confusing."
@@ -478,7 +478,7 @@
     "category": 3,
     "category_name": "Identity theft and credential compromise",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: ACCESS BANK: Your internet banking password was successfully changed on 17/06/26 at 11:32am. If you did not make this change, call 01-2712005 immediately. Access Bank will never ask for your password by phone or email.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: ACCESS BANK: Your internet banking password was successfully changed on 12/06/26 at 11:32am. If you did not make this change, call 01-2712005 immediately. Access Bank will never ask for your password by phone or email.",
     "label": "safe",
     "target_behaviour": "classify_safe",
     "notes": "Password change confirmation. Real Access Bank number. Explicit fraud advisory that bank will not request passwords. Appropriate security message. Confirms a customer-initiated action."
@@ -489,7 +489,7 @@
     "category": 3,
     "category_name": "Identity theft and credential compromise",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: GTBank: A new device (iPhone 14, Lagos) was used to access your account on 17/06/26 at 2:15pm. If this was you, no action is needed. If not, call 07003000000 immediately. GTBank will NEVER request your PIN or password via SMS or phone.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: GTBank: A new device (iPhone 14, Lagos) was used to access your account on 12/06/26 at 2:15pm. If this was you, no action is needed. If not, call 07003000000 immediately. GTBank will NEVER request your PIN or password via SMS or phone.",
     "label": "safe",
     "target_behaviour": "classify_safe",
     "notes": "New device login notification. Specific device details. Real GTBank number. Explicit warning against PIN or password requests via SMS. Standard security practice. No link or credential request."
@@ -500,7 +500,7 @@
     "category": 3,
     "category_name": "Identity theft and credential compromise",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Kuda: Your account security settings were updated on 17 Jun at 3:42pm as requested. If you did not make this change, contact us immediately through the Kuda app. Kuda will never ask for your password or PIN outside of the official app.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Kuda: Your account security settings were updated on 12 Jun at 3:42pm as requested. If you did not make this change, contact us immediately through the Kuda app. Kuda will never ask for your password or PIN outside of the official app.",
     "label": "safe",
     "target_behaviour": "classify_safe",
     "notes": "Security settings change confirmation. Fraud advisory explicitly stating Kuda will not request credentials outside the app. Directs to official app. Confirms a prior customer action."
@@ -610,7 +610,7 @@
     "category": 3,
     "category_name": "Identity theft and credential compromise",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: UBA BANK: We are migrating all customer accounts to our upgraded security platform. All customers must re-verify before June 30. Complete verification at uba-platform-upgrade.ng. You will need your full name, date of birth, mother's maiden name, BVN and current internet banking password.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: UBA BANK: We are migrating all customer accounts to our upgraded security platform. All customers must re-verify before June 13. Complete verification at uba-platform-upgrade.ng. You will need your full name, date of birth, mother's maiden name, BVN and current internet banking password.",
     "label": "scam",
     "target_behaviour": "classify_scam",
     "notes": "Lookalike domain. Full identity and password harvesting disguised as platform migration. Deadline pressure. UBA impersonation."
@@ -621,7 +621,7 @@
     "category": 3,
     "category_name": "Identity theft and credential compromise",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: ZENITH BANK: We are performing scheduled maintenance on our internet banking platform from June 20-22. During this period, you may experience intermittent access. Please update your Zenith Bank mobile app before June 20 to ensure uninterrupted service. No account action required.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: ZENITH BANK: We are performing scheduled maintenance on our internet banking platform from June 11-13. During this period, you may experience intermittent access. Please update your Zenith Bank mobile app before June 11 to ensure uninterrupted service. No account action required.",
     "label": "suspicious",
     "target_behaviour": "classify_suspicious",
     "notes": "No credential request and no link. However, asking customers to update their app via SMS is a known social engineering vector for redirecting to fake apps. Maintenance dates add legitimacy."
@@ -665,7 +665,7 @@
     "category": 3,
     "category_name": "Identity theft and credential compromise",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: FIDELITY BANK: As part of our security upgrade, customers who have not updated their security questions in the last 2 years are required to do so by July 31. Update via the Fidelity Bank mobile app under Settings. Customers who do not update may experience restricted login access after the deadline.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: FIDELITY BANK: As part of our security upgrade, customers who have not updated their security questions in the last 2 years are required to do so by June 13. Update via the Fidelity Bank mobile app under Settings. Customers who do not update may experience restricted login access after the deadline.",
     "label": "suspicious",
     "target_behaviour": "classify_suspicious",
     "notes": "Directs to official app. Security question updates are a real bank practice. However, the deadline and login restriction threat create pressure. The unsolicited SMS format is slightly unusual for this type of routine update."
@@ -687,7 +687,7 @@
     "category": 4,
     "category_name": "Fake fintech and bank platform impersonation",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: OPay: Transfer to 5 different contacts today and earn ₦200 cashback directly in your wallet! Offer valid June 17-18 only. Open the OPay app to start. T&Cs apply at opay.ng. Reply STOP to opt out.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: OPay: Transfer to 5 different contacts today and earn ₦200 cashback directly in your wallet! Offer valid June 12-13 only. Open the OPay app to start. T&Cs apply at opay.ng. Reply STOP to opt out.",
     "label": "safe",
     "target_behaviour": "classify_safe",
     "notes": "Legitimate promotional offer. Directs to official app and real OPay domain. Opt-out option is a real marketing practice. No credential request. No link other than official domain reference."
@@ -698,7 +698,7 @@
     "category": 4,
     "category_name": "Fake fintech and bank platform impersonation",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: MONIEPOINT: Our merchant fee schedule has been updated effective July 1, 2026. Changes include reduced charges on transfers above ₦500,000. Log into your Moniepoint app or visit moniepoint.com to view the updated schedule.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: MONIEPOINT: Our merchant fee schedule has been updated effective from next month. Changes include reduced charges on transfers above ₦500,000. Log into your Moniepoint app or visit moniepoint.com to view the updated schedule.",
     "label": "safe",
     "target_behaviour": "classify_safe",
     "notes": "Fee schedule update notification. Directs to official app and real Moniepoint domain. No credential request. No urgency or threat. Standard business communication to merchant customers."
@@ -742,7 +742,7 @@
     "category": 4,
     "category_name": "Fake fintech and bank platform impersonation",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Carbon: Your loan repayment of ₦12,500 was received on 17 Jun 2026. Outstanding balance: ₦37,500. Next repayment due: 17 Jul 2026. Manage your loan in the Carbon app at getcarbon.co.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Carbon: Your loan repayment of ₦12,500 was received on 12 Jun 2026. Outstanding balance: ₦37,500. Next repayment due: in 30 days. Manage your loan in the Carbon app at getcarbon.co.",
     "label": "safe",
     "target_behaviour": "classify_safe",
     "notes": "Standard Carbon loan repayment confirmation. Balance and next due date provided. Real Carbon domain. Directs to official app. No credential request."
@@ -786,7 +786,7 @@
     "category": 4,
     "category_name": "Fake fintech and bank platform impersonation",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: CENTRAL BANK OF NIGERIA: All bank customers are required to re-verify their accounts on the CBN Customer Identity Portal at cbn-id-portal.gov-ng.net before July 31, 2026. Submit your BVN, NIN and internet banking credentials. Non-compliance will result in account restriction. This is mandatory.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: CENTRAL BANK OF NIGERIA: All bank customers are required to re-verify their accounts on the CBN Customer Identity Portal at cbn-id-portal.gov-ng.net before June 13, 2026. Submit your BVN, NIN and internet banking credentials. Non-compliance will result in account restriction. This is mandatory.",
     "label": "scam",
     "target_behaviour": "classify_scam",
     "notes": "CBN impersonation. Fake government portal domain. BVN, NIN and full credential harvesting. Mandatory regulatory framing. High-authority impersonation."
@@ -841,7 +841,7 @@
     "category": 4,
     "category_name": "Fake fintech and bank platform impersonation",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: MONIEPOINT: A scheduled system update on June 25 may temporarily affect app performance for up to 2 hours. To avoid disruption to your business, please download the latest version of the Moniepoint app from the Google Play Store or Apple App Store before June 25. Your settlements will not be affected.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: MONIEPOINT: A scheduled system update on June 13 may temporarily affect app performance for up to 2 hours. To avoid disruption to your business, please download the latest version of the Moniepoint app from the Google Play Store or Apple App Store before June 13. Your settlements will not be affected.",
     "label": "suspicious",
     "target_behaviour": "classify_suspicious",
     "notes": "Directs to official app stores. No credential request. However, a maintenance SMS pushing users to update the app is a known vector for redirecting to fake apps. The specific date and legitimate-sounding reassurance are social engineering techniques."
@@ -875,9 +875,9 @@
     "category_name": "Fake fintech and bank platform impersonation",
     "channel": "SMS",
     "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: PALMPAY: You have a pending wallet upgrade that will increase your daily transaction limit from ₦200,000 to ₦500,000. To complete the upgrade, open your PalmPay app and follow the prompts under Wallet Settings > Upgrade. This upgrade is free and available for 14 days.",
-    "label": "suspicious",
-    "target_behaviour": "classify_suspicious",
-    "notes": "No link or credential request. Directs to official app. However, unsolicited SMS about a pending wallet upgrade creates a reason to open the app and follow prompts. Could be a setup for a follow-up social engineering message."
+    "label": "safe",
+    "target_behaviour": "classify_safe",
+    "notes": "No link or credential request. Directs to official app. However, unsolicited SMS about a pending wallet upgrade creates a reason to open the app and follow prompts. Could be a setup for a follow-up social engineering message. [Reclassified from suspicious to safe per researcher review, June 2026.]"
   },
   {
     "id": "SA-CLS-4-U006",
@@ -885,10 +885,10 @@
     "category": 4,
     "category_name": "Fake fintech and bank platform impersonation",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: FLUTTERWAVE: Your API integration rate limit was temporarily adjusted following unusual transaction volumes detected on your account on June 15. Please log into your Flutterwave dashboard to review your transaction logs and confirm your integration is functioning correctly. For help, contact support@flutterwave.com.",
-    "label": "suspicious",
-    "target_behaviour": "classify_suspicious",
-    "notes": "support@flutterwave.com is Flutterwave's real email. Directs to dashboard. However, an unsolicited API rate limit notification via SMS is unusual for a developer platform that communicates primarily via email and in-dashboard alerts."
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: FLUTTERWAVE: Your API integration rate limit was temporarily adjusted following unusual transaction volumes detected on your account on June 12. Please log into your Flutterwave dashboard to review your transaction logs and confirm your integration is functioning correctly. For help, contact support@flutterwave.com.",
+    "label": "safe",
+    "target_behaviour": "classify_safe",
+    "notes": "support@flutterwave.com is Flutterwave's real email. Directs to dashboard. However, an unsolicited API rate limit notification via SMS is unusual for a developer platform that communicates primarily via email and in-dashboard alerts. [Reclassified from suspicious to safe per researcher review, June 2026.]"
   },
   {
     "id": "SA-CLS-5-F001",
@@ -940,7 +940,7 @@
     "category": 5,
     "category_name": "Investment scams and Ponzi schemes",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: FBNQuest Asset Management: Confirming receipt of your instruction to purchase ₦500,000 in Federal Government Bonds on 17/06/26. Settlement: T+2 (19/06/26). Confirmation advice sent to your registered email. For queries, visit fbnquest.com.ng.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: FBNQuest Asset Management: Confirming receipt of your instruction to purchase ₦500,000 in Federal Government Bonds on 11/06/26. Settlement: T+2 (13/06/26). Confirmation advice sent to your registered email. For queries, visit fbnquest.com.ng.",
     "label": "safe",
     "target_behaviour": "classify_safe",
     "notes": "Legitimate FBNQuest investment confirmation. Federal Government Bond purchase is a real investment product. T+2 settlement is standard. Real FBNQuest domain. No credential request."
@@ -951,7 +951,7 @@
     "category": 5,
     "category_name": "Investment scams and Ponzi schemes",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: LAPO Microfinance Bank: Your cooperative savings contribution of ₦15,000 for June 2026 has been received. Interest earned: ₦450. Total savings balance: ₦245,450. Annual dividend declaration: December 2026. Visit your nearest LAPO branch for queries.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: LAPO Microfinance Bank: Your cooperative savings contribution of ₦15,000 for June 2026 has been received. Interest earned: ₦450. Total savings balance: ₦245,450. Annual dividend declaration: end of year. Visit your nearest LAPO branch for queries.",
     "label": "safe",
     "target_behaviour": "classify_safe",
     "notes": "LAPO Microfinance Bank is a real and regulated Nigerian institution. Cooperative savings is a legitimate product. Realistic interest amount. Branch visit for queries is legitimate. No link or credential request."
@@ -1061,7 +1061,7 @@
     "category": 5,
     "category_name": "Investment scams and Ponzi schemes",
     "channel": "WhatsApp",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: PALACE CAPITAL INVESTMENT: Q1 2026 returns of 18% have been declared for all members. Payout commences June 25. If you have not registered your payout account, visit our offices in Lagos (VI), Abuja (Wuse) or Port Harcourt (GRA) with your membership ID and a valid ID card.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: PALACE CAPITAL INVESTMENT: Q1 2026 returns of 18% have been declared for all members. Payout commences June 13. If you have not registered your payout account, visit our offices in Lagos (VI), Abuja (Wuse) or Port Harcourt (GRA) with your membership ID and a valid ID card.",
     "label": "suspicious",
     "target_behaviour": "classify_suspicious",
     "notes": "18% quarterly return is very high. In-person office visit adds false legitimacy. Palace Capital Investment is not a recognisable regulated entity. Physical offices and membership ID requirements are social engineering legitimacy signals."
@@ -1094,7 +1094,7 @@
     "category": 6,
     "category_name": "Fake loan app scams",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Branch: Your loan of ₦80,000 has been approved and credited to your account ending ***4521. First repayment of ₦28,500 is due July 17. Open the Branch app to view your full repayment schedule. No hidden fees.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Branch: Your loan of ₦80,000 has been approved and credited to your account ending ***4521. First repayment of ₦28,500 is due in 30 days. Open the Branch app to view your full repayment schedule. No hidden fees.",
     "label": "safe",
     "target_behaviour": "classify_safe",
     "notes": "Branch International is a real regulated lender. Specific disbursement amount and first repayment date. No fee before disbursement. Directs to official app. No credential request."
@@ -1105,7 +1105,7 @@
     "category": 6,
     "category_name": "Fake loan app scams",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Carbon: Friendly reminder: your loan repayment of ₦15,500 is due on June 30. Ensure your linked GTBank account has sufficient funds before 11:59pm. Avoid late charges by paying on time. Manage in the Carbon app.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Carbon: Friendly reminder: your loan repayment of ₦15,500 is due on June 13. Ensure your linked GTBank account has sufficient funds before 11:59pm. Avoid late charges by paying on time. Manage in the Carbon app.",
     "label": "safe",
     "target_behaviour": "classify_safe",
     "notes": "Carbon Finance is a real lender. Repayment reminder is a legitimate communication. No advance fee request. Directs to official app. No link. Standard pre-due-date reminder."
@@ -1116,7 +1116,7 @@
     "category": 6,
     "category_name": "Fake loan app scams",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: FairMoney: Your June 2026 account statement is ready. Active loan: 1 | Outstanding balance: ₦55,200 | Last payment: Jun 10 ₦18,400 | Next due: Jul 10. View your full statement in the FairMoney app or at fairmoney.ng.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: FairMoney: Your June 2026 account statement is ready. Active loan: 1 | Outstanding balance: ₦55,200 | Last payment: Jun 10 ₦18,400 | Next due: in 30 days. View your full statement in the FairMoney app or at fairmoney.ng.",
     "label": "safe",
     "target_behaviour": "classify_safe",
     "notes": "FairMoney is a real Nigerian lender. Standard loan statement with balance and payment history. Real FairMoney domain. No credential request. No fee. Directs to official app and website."
@@ -1138,7 +1138,7 @@
     "category": 6,
     "category_name": "Fake loan app scams",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: LAPO Microfinance Bank: Your group loan repayment of ₦5,000 for June is due on June 25. Pay at any LAPO branch, via mobile banking, or ask your group leader. For assistance, call 0807-XXXXXXX. Thank you for banking with LAPO.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: LAPO Microfinance Bank: Your group loan repayment of ₦5,000 for June is due on June 13. Pay at any LAPO branch, via mobile banking, or ask your group leader. For assistance, call 0807-XXXXXXX. Thank you for banking with LAPO.",
     "label": "safe",
     "target_behaviour": "classify_safe",
     "notes": "LAPO is a real regulated microfinance bank. Group loan structure is a real LAPO product. Multiple legitimate payment channels provided. No advance fee. No link. No credential request."
@@ -1204,7 +1204,7 @@
     "category": 6,
     "category_name": "Fake loan app scams",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: CARBON FINANCE: Your loan repayment of ₦15,500 is due on June 30. To avoid a late fee, ensure your linked account has sufficient funds by 11:59pm. For assistance, visit app.getcarbon.co or call 0700-CARBON-0. Your loan account is in good standing.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: CARBON FINANCE: Your loan repayment of ₦15,500 is due on June 13. To avoid a late fee, ensure your linked account has sufficient funds by 11:59pm. For assistance, visit app.getcarbon.co or call 0700-CARBON-0. Your loan account is in good standing.",
     "label": "suspicious",
     "target_behaviour": "classify_suspicious",
     "notes": "Carbon Finance is a real lender. app.getcarbon.co looks close to legitimate. However, 0700-CARBON-0 is not Carbon's actual contact number. Slight discrepancy in contact number makes this suspicious rather than safe."
@@ -1248,7 +1248,7 @@
     "category": 6,
     "category_name": "Fake loan app scams",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: PALMCREDIT: Your loan repayment of ₦8,200 was due June 15 and remains outstanding. Your balance is now ₦9,850 including a late fee. To clear your balance and avoid further charges, pay through the PalmCredit app or dial *737# to pay via USSD. For disputes, call 0700-PALMPAY.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: PALMCREDIT: Your loan repayment of ₦8,200 was due June 10 and remains outstanding. Your balance is now ₦9,850 including a late fee. To clear your balance and avoid further charges, pay through the PalmCredit app or dial *737# to pay via USSD. For disputes, call 0700-PALMPAY.",
     "label": "suspicious",
     "target_behaviour": "classify_suspicious",
     "notes": "*737# is a real USSD banking code. PalmCredit is a real product. However, 0700-PALMPAY is PalmPay's contact rather than a specific PalmCredit line. Late fee of ₦1,650 on ₦8,200 loan is disproportionately high. Slightly off contact number raises suspicion."
@@ -1259,7 +1259,7 @@
     "category": 6,
     "category_name": "Fake loan app scams",
     "channel": "WhatsApp",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Hi, this is a reminder from your lending partner QuickCheck Nigeria. Your loan is approaching maturity and you have an outstanding balance of ₦55,000. We are offering a one-time 20% settlement discount if you settle in full by June 25. Contact our team to process your settlement today.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Hi, this is a reminder from your lending partner QuickCheck Nigeria. Your loan is approaching maturity and you have an outstanding balance of ₦55,000. We are offering a one-time 20% settlement discount if you settle in full by June 13. Contact our team to process your settlement today.",
     "label": "suspicious",
     "target_behaviour": "classify_suspicious",
     "notes": "Settlement discounts are a real debt collection practice. QuickCheck is a real Nigerian lending platform. However, WhatsApp contact offering a settlement discount rather than official app or email notification is unusual for a regulated lender."
@@ -1292,7 +1292,7 @@
     "category": 7,
     "category_name": "Fake job offer scams",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Nigerian Breweries Plc: This is to confirm receipt of your graduate trainee application submitted via nbplc.com. Applications close June 30. Shortlisted candidates will be contacted by email only. We do not charge application fees and will never request payment at any stage.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Nigerian Breweries Plc: This is to confirm receipt of your graduate trainee application submitted via nbplc.com. Applications close June 13. Shortlisted candidates will be contacted by email only. We do not charge application fees and will never request payment at any stage.",
     "label": "safe",
     "target_behaviour": "classify_safe",
     "notes": "Real company (Nigerian Breweries). Application acknowledgment from official portal. Email-only contact for shortlisted candidates. Explicit no-fee statement. Standard legitimate recruitment acknowledgment."
@@ -1303,7 +1303,7 @@
     "category": 7,
     "category_name": "Fake job offer scams",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Stanbic IBTC Bank: Your application for Business Banker has been shortlisted. A panel interview is scheduled for June 28 at our Victoria Island office at 10:00am. Please bring 2 copies of your CV, academic certificates and a valid ID. Confirmation sent to your registered email.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Stanbic IBTC Bank: Your application for Business Banker has been shortlisted. A panel interview is scheduled for June 13 at our Victoria Island office at 10:00am. Please bring 2 copies of your CV, academic certificates and a valid ID. Confirmation sent to your registered email.",
     "label": "safe",
     "target_behaviour": "classify_safe",
     "notes": "Real company (Stanbic IBTC). In-person interview at specific office address. No fee request. Standard documents required. Confirmation via registered email. Standard legitimate interview invitation."
@@ -1314,7 +1314,7 @@
     "category": 7,
     "category_name": "Fake job offer scams",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: MTN Nigeria Communications: Your application for Network Engineer has progressed to the technical assessment stage. A link to the assessment has been sent to your registered email. The assessment window is June 20-22. No fees apply at any stage of MTN recruitment.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: MTN Nigeria Communications: Your application for Network Engineer has progressed to the technical assessment stage. A link to the assessment has been sent to your registered email. The assessment window is June 11-13. No fees apply at any stage of MTN recruitment.",
     "label": "safe",
     "target_behaviour": "classify_safe",
     "notes": "Real company (MTN Nigeria). Assessment link sent to registered email (not WhatsApp). No fee statement. Time-bound assessment window is standard. Legitimate stage-gate recruitment communication."
@@ -1325,7 +1325,7 @@
     "category": 7,
     "category_name": "Fake job offer scams",
     "channel": "WhatsApp",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: From Dangote Group HR: Your application for Graduate Engineer Trainee has been successful. Please report to the Dangote Industrial Complex, Ikoyi on July 1 with your academic credentials, 4 passport photographs and a valid government ID. Your appointment letter has been sent to your registered email. Important: Do not pay any fees to any individual claiming to represent Dangote Group.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: From Dangote Group HR: Your application for Graduate Engineer Trainee has been successful. Please report to the Dangote Industrial Complex, Ikoyi within two weeks with your academic credentials, 4 passport photographs and a valid government ID. Your appointment letter has been sent to your registered email. Important: Do not pay any fees to any individual claiming to represent Dangote Group.",
     "label": "safe",
     "target_behaviour": "classify_safe",
     "notes": "Real company (Dangote Group). Specific reporting address. Documents required are standard. Offer letter via registered email. Explicit warning against fee payments is a hallmark of a legitimate offer that is aware of associated scams."
@@ -1336,7 +1336,7 @@
     "category": 7,
     "category_name": "Fake job offer scams",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Standard Chartered Bank: Thank you for attending the interview for Relationship Manager on June 15. We are pleased to inform you that you have been selected to proceed to the final assessment stage. Full details have been sent to your registered email address. Standard Chartered does not charge fees at any stage of our recruitment.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Standard Chartered Bank: Thank you for attending the interview for Relationship Manager on June 12. We are pleased to inform you that you have been selected to proceed to the final assessment stage. Full details have been sent to your registered email address. Standard Chartered does not charge fees at any stage of our recruitment.",
     "label": "safe",
     "target_behaviour": "classify_safe",
     "notes": "Real company (Standard Chartered). Advance through interview stages. Details via registered email. No fee statement. Standard legitimate multi-stage recruitment communication."
@@ -1347,7 +1347,7 @@
     "category": 7,
     "category_name": "Fake job offer scams",
     "channel": "WhatsApp",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: SHELL PETROLEUM DEVELOPMENT COMPANY (SPDC) RECRUITMENT 2026: Hiring Field Engineers and Technicians (₦750,000/month + benefits + housing). Deadline: June 30. Submit CV and pay ₦12,000 application processing fee to GTBank 0876543210 (SPDC HR Department). Shortlisted candidates notified within 7 days.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: SHELL PETROLEUM DEVELOPMENT COMPANY (SPDC) RECRUITMENT 2026: Hiring Field Engineers and Technicians (₦750,000/month + benefits + housing). Deadline: June 13. Submit CV and pay ₦12,000 application processing fee to GTBank 0876543210 (SPDC HR Department). Shortlisted candidates notified within 7 days.",
     "label": "scam",
     "target_behaviour": "classify_scam",
     "notes": "Application processing fee demand. Real company impersonation (SPDC). Legitimate companies never charge application fees. WhatsApp recruitment for formal company is unusual."
@@ -1413,7 +1413,7 @@
     "category": 7,
     "category_name": "Fake job offer scams",
     "channel": "WhatsApp",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: We found your profile on Jobberman and would like to invite you for an interview for a Business Development Analyst role at our Lagos office. Salary range: ₦200,000-₦250,000. The interview will be via Google Meet. Please confirm your availability for June 24 between 10am and 2pm.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: We found your profile on Jobberman and would like to invite you for an interview for a Business Development Analyst role at our Lagos office. Salary range: ₦200,000-₦250,000. The interview will be via Google Meet. Please confirm your availability for June 13 between 10am and 2pm.",
     "label": "suspicious",
     "target_behaviour": "classify_suspicious",
     "notes": "Reference to Jobberman adds legitimacy. Salary range is realistic. Google Meet interview is common. However, no company name, contact via WhatsApp from unknown number rather than official email, and no other contact details are all amber flags."
@@ -1424,7 +1424,7 @@
     "category": 7,
     "category_name": "Fake job offer scams",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: CONGRATULATIONS: Your application to the TotalEnergies Nigeria Graduate Trainee Programme 2026 has been shortlisted. A virtual panel interview is scheduled for June 28. To confirm your attendance, reply YES and provide your full name and the email address used in your application.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: CONGRATULATIONS: Your application to the TotalEnergies Nigeria Graduate Trainee Programme 2026 has been shortlisted. A virtual panel interview is scheduled for June 13. To confirm your attendance, reply YES and provide your full name and the email address used in your application.",
     "label": "suspicious",
     "target_behaviour": "classify_suspicious",
     "notes": "TotalEnergies is a real company with a real graduate programme. Contact via SMS for interview scheduling is unusual (typically done via email). Asking for personal details via SMS reply is slightly concerning. No fee request but unusual channel."
@@ -1512,7 +1512,7 @@
     "category": 8,
     "category_name": "Government and relief fund impersonation",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Lagos Internal Revenue Service (LIRS): Your 2025 Personal Income Tax assessment of ₦85,000 has been issued. Payment can be made via the LIRS portal at lirs.gov.ng, at any designated commercial bank, or at the LIRS office at 15 Sokode Crescent, Wuse 2, Abuja. Payment deadline: July 31.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Lagos Internal Revenue Service (LIRS): Your 2025 Personal Income Tax assessment of ₦85,000 has been issued. Payment can be made via the LIRS portal at lirs.gov.ng, at any designated commercial bank, or at the LIRS office at 15 Sokode Crescent, Wuse 2, Abuja. Payment deadline: June 13.",
     "label": "safe",
     "target_behaviour": "classify_safe",
     "notes": "LIRS is the real Lagos tax authority. Official .gov.ng domain. Multiple legitimate payment channels. Specific office address. No link to external non-government site. Standard tax assessment notification."
@@ -1534,7 +1534,7 @@
     "category": 8,
     "category_name": "Government and relief fund impersonation",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: FEDERAL GOVERNMENT OF NIGERIA - RENEWED HOPE INITIATIVE: You have been selected to receive a ₦30,000 palliative payment. To receive funds, register at fgn-palliative-2026.com using your BVN and NIN. A nominal portal fee of ₦500 applies. Deadline: June 30. Only first 50,000 registrants will receive payment.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: FEDERAL GOVERNMENT OF NIGERIA - RENEWED HOPE INITIATIVE: You have been selected to receive a ₦30,000 palliative payment. To receive funds, register at fgn-palliative-2026.com using your BVN and NIN. A nominal portal fee of ₦500 applies. Deadline: June 13. Only first 50,000 registrants will receive payment.",
     "label": "scam",
     "target_behaviour": "classify_scam",
     "notes": "Fake government domain. BVN and NIN harvesting. Portal fee advance fraud. Fake government programme impersonation. Artificial scarcity deadline."
@@ -1545,7 +1545,7 @@
     "category": 8,
     "category_name": "Government and relief fund impersonation",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: NNPC SUBSIDY COMPENSATION PROGRAMME: As a registered Nigerian, you are eligible for a one-time payment of ₦75,000 under the Fuel Subsidy Removal Compensation Scheme. Register at nnpc-compensation.gov-ng.net before June 30 with your BVN, NIN and bank account details. Only first 10,000 registrants qualify.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: NNPC SUBSIDY COMPENSATION PROGRAMME: As a registered Nigerian, you are eligible for a one-time payment of ₦75,000 under the Fuel Subsidy Removal Compensation Scheme. Register at nnpc-compensation.gov-ng.net before June 13 with your BVN, NIN and bank account details. Only first 10,000 registrants qualify.",
     "label": "scam",
     "target_behaviour": "classify_scam",
     "notes": "Fake NNPC domain (gov-ng.net is not a valid government domain). BVN, NIN and bank detail harvesting. Large cash promise. Artificial scarcity trigger. NNPC impersonation."
@@ -1600,7 +1600,7 @@
     "category": 8,
     "category_name": "Government and relief fund impersonation",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: NPOWER BENEFICIARY ALERT: Your June stipend of ₦30,000 has been delayed due to a system upgrade at the Bank of Industry. To receive your payment without further delay, update your bank details at npowerportal-update.ng before June 25. Existing beneficiaries must re-verify annually.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: NPOWER BENEFICIARY ALERT: Your June stipend of ₦30,000 has been delayed due to a system upgrade at the Bank of Industry. To receive your payment without further delay, update your bank details at npowerportal-update.ng before June 13. Existing beneficiaries must re-verify annually.",
     "label": "suspicious",
     "target_behaviour": "classify_suspicious",
     "notes": "NPower is a real programme. Bank of Industry link is plausible. However, npowerportal-update.ng is not an official government domain (should be .gov.ng). Domain discrepancy combined with re-verification requirement are suspicious indicators."
@@ -1622,7 +1622,7 @@
     "category": 8,
     "category_name": "Government and relief fund impersonation",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: NIMC: Your NIN record shows an incomplete biometric capture from your initial enrolment. To receive your physical National Identification Card, please visit the nearest NIMC Enrolment Centre with your NIN slip and a valid ID before August 31. Bring two passport photographs.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: NIMC: Your NIN record shows an incomplete biometric capture from your initial enrolment. To receive your physical National Identification Card, please visit the nearest NIMC Enrolment Centre with your NIN slip and a valid ID before June 13. Bring two passport photographs.",
     "label": "suspicious",
     "target_behaviour": "classify_suspicious",
     "notes": "NIMC is a real agency. Service centre visit is legitimate (no link). Incomplete biometric records exist as a real issue. However, NIMC does not typically send proactive SMS about individual incomplete records. Format is slightly off from real NIMC communications."
@@ -1644,614 +1644,9 @@
     "category": 8,
     "category_name": "Government and relief fund impersonation",
     "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: NHIS: Your National Health Insurance Scheme enrollment record shows incomplete information. To maintain your coverage and access NHIS benefits, complete your registration update at nhis.gov.ng or visit any NHIS-accredited hospital with your NIN and employee ID before July 31.",
+    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: NHIS: Your National Health Insurance Scheme enrollment record shows incomplete information. To maintain your coverage and access NHIS benefits, complete your registration update at nhis.gov.ng or visit any NHIS-accredited hospital with your NIN and employee ID before June 13.",
     "label": "suspicious",
     "target_behaviour": "classify_suspicious",
     "notes": "nhis.gov.ng is the real NHIS website. Service option is legitimate. However, unsolicited SMS about incomplete NHIS records is not standard NHIS practice. The deadline and coverage threat create pressure that is slightly unusual for a genuine administrative reminder."
-  },
-  {
-    "id": "SA-RW-S002",
-    "type": "classification",
-    "category": 1,
-    "category_name": "Phishing and fake bank alerts",
-    "channel": "Email",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Hello there, your account is under risk of being hacked click the link below to retrieve it.",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Generic phishing email asking user to click link to secure account."
-  },
-  {
-    "id": "SA-RW-S010",
-    "type": "classification",
-    "category": 1,
-    "category_name": "Phishing and fake bank alerts",
-    "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Bank of America: Suspicious $1,200 charge detected. If not me, click here to cancel",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Bank of America phishing SMS with fake charge alert and cancel link."
-  },
-  {
-    "id": "SA-RW-S011",
-    "type": "classification",
-    "category": 1,
-    "category_name": "Phishing and fake bank alerts",
-    "channel": "WhatsApp",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Actually am trying to transfer money to someone now but it seems the network is not good but I need to transfer the money now can you help me to transfer the money to the person account directly\nI promise to pay you back first thing tomorrow morning please 🙏",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Urgent transfer social engineering scam. Impersonates known contact asking to transfer money on their behalf."
-  },
-  {
-    "id": "SA-RW-S012",
-    "type": "classification",
-    "category": 1,
-    "category_name": "Phishing and fake bank alerts",
-    "channel": "WhatsApp",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Your account will be blocked in 10 mins, contact us to verify now",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Account blocking urgency scam via WhatsApp. Short, high-pressure format."
-  },
-  {
-    "id": "SA-RW-S013",
-    "type": "classification",
-    "category": 1,
-    "category_name": "Phishing and fake bank alerts",
-    "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Please I sent you a recharge card of 5000 naira don't use please send it back to me",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Recharge card reversal scam. Unique Nigerian-specific fraud: victim is tricked into sending back a code that was never received."
-  },
-  {
-    "id": "SA-RW-S014",
-    "type": "classification",
-    "category": 1,
-    "category_name": "Phishing and fake bank alerts",
-    "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Please click on this link http://172.16.3.27:8067/adm/web?id=185425c96128db6f8af6a4a019d2bf46&lang=en",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Bare phishing link with private IP and admin path. No context provided — designed to exploit curiosity."
-  },
-  {
-    "id": "SA-RW-S026",
-    "type": "classification",
-    "category": 1,
-    "category_name": "Phishing and fake bank alerts",
-    "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Hi, I saw your picture on this website.\n\nhttps://ddek08.icu/rlkzp19n",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Profile/photo blackmail phishing link. Creates curiosity/fear to induce clicking. .icu domain is commonly used in phishing."
-  },
-  {
-    "id": "SA-RW-S027",
-    "type": "classification",
-    "category": 1,
-    "category_name": "Phishing and fake bank alerts",
-    "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Dear customer, your bank account has been suspended due to suspicious activity.\nClick here immediately to verify your details: [Fake-link]. Failure to comply within 24 hours will result in permanent closure of your account.",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Bank account suspension phishing. 24-hour closure threat. Generic format applicable across banks."
-  },
-  {
-    "id": "SA-RW-S028",
-    "type": "classification",
-    "category": 1,
-    "category_name": "Phishing and fake bank alerts",
-    "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Gt Bank: We have noticed\nunusual activity within your\nGt account. To prevent\naccess being blocked, please\nvisit https://gt.co.ng-\naccount.help",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: GTBank phishing with lookalike domain (gt.co.ng-account.help). Line breaks suggest SMS format. Authentic Nigerian bank impersonation."
-  },
-  {
-    "id": "SA-RW-S030",
-    "type": "classification",
-    "category": 1,
-    "category_name": "Phishing and fake bank alerts",
-    "channel": "WhatsApp",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Can you please help me transfer 40,000 thousand to a friend of mine for treatment am having network issues I will make the refund tomorrow morning",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Emergency transfer scam requesting ₦40,000 for a friend. Impersonates known contact with network issues pretext."
-  },
-  {
-    "id": "SA-RW-S034",
-    "type": "classification",
-    "category": 1,
-    "category_name": "Phishing and fake bank alerts",
-    "channel": "Email",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: We detected some unusual login attempts on your account from a device in a different country. For your security, we have temporarily suspended your access.\nTo restore your account and update your billing information, you must verify your identity within 24 hours, or your account will be permanently suspended.",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Account suspension phishing email. 24-hour deadline. Generic format targeting multiple platforms."
-  },
-  {
-    "id": "SA-RW-S041",
-    "type": "classification",
-    "category": 1,
-    "category_name": "Phishing and fake bank alerts",
-    "channel": "Email",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Security Alert: Unusual Access Attempt\nWe have detected a login attempt on your GitHub account that appears to be from a new location or device.\n\nLogin Information\nLocation: Reykjavik, Iceland\nIP Address: 53.253.117.8\nDevice: Unrecognized\nIf you recognize this activity, no further action is required",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: GitHub security alert format. Could be legitimate or phishing. No link shown. Specific IP and location add legitimacy. Lacks clear call to action which real phishing would include. [Reclassified to scam per researcher review.]"
-  },
-  {
-    "id": "SA-RW-S044",
-    "type": "classification",
-    "category": 1,
-    "category_name": "Phishing and fake bank alerts",
-    "channel": "Telegram",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: There are photos of you on the website\n\nhttp://xiaoaidj-home.com",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Photo blackmail/phishing link on Telegram. Creates fear or curiosity to induce clicking. No financial request made yet. Suspicious pending what the link leads to. [Reclassified to scam per researcher review.]"
-  },
-  {
-    "id": "SA-RW-S047",
-    "type": "classification",
-    "category": 1,
-    "category_name": "Phishing and fake bank alerts",
-    "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: I have been trying to transfer to someone but my bank is having network issues, can you please help me transfer 100,000 to the person I will send back to you immediately my bank network is stable.\nI promise I will refund it back to you before the end of today.",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Urgent transfer request via SMS. Claims to be a known contact. No direct credential request but asks for money transfer. Suspicious without confirmation of sender identity. [Reclassified to scam per researcher review.]"
-  },
-  {
-    "id": "SA-RW-S048",
-    "type": "classification",
-    "category": 1,
-    "category_name": "Phishing and fake bank alerts",
-    "channel": "WhatsApp",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Good morning morning \nHow are you doing\nPlease I need a favour from you right now it's really urgent",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Social engineering WhatsApp opener claiming urgent favour. No harmful request yet. Classic impersonation setup. Duplicate 'morning' suggests copied/pasted template. [Reclassified to scam per researcher review.]"
-  },
-  {
-    "id": "SA-RW-S049",
-    "type": "classification",
-    "category": 1,
-    "category_name": "Phishing and fake bank alerts",
-    "channel": "Email",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Verify your account\nWe detected something unusual about a recent sign-in for the Microsoft account al*****@live.com. For example, you might be signing in from a new location, device, or app.\nTo help keep you safe, we've blocked access to your inbox, contacts list, and calendar for that sign-in. Please verify your identity.",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Microsoft account verification email. Format matches real Microsoft security emails. Could be legitimate or a phishing attempt. Masked email address adds ambiguity. [Reclassified to scam per researcher review.]"
-  },
-  {
-    "id": "SA-RW-S040",
-    "type": "classification",
-    "category": 2,
-    "category_name": "SIM swap fraud",
-    "channel": "WhatsApp",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: *MTN 1 MONTH FREE DATA FOR OLD SUBSCRIBERS 🎉*\n\nGet 1 Month Free Data if your MTN Sim Card is up to a year old\n\n*HOW OLD IS YOUR SIM CARD*?\n1 Year Old - 5GB\n2 Years and above - 10GB\n5 - 10 Years - 20GB\n10 Years and above - 50GB\n\n*Get Offer*👇\nhttps://itidokpo.xyz/freemtndata",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: MTN free data WhatsApp scam with lookalike domain (itidokpo.xyz). Tiered offer by SIM age is designed to feel personalised. Authentic format mimicking carrier promotions."
-  },
-  {
-    "id": "SA-RW-S053",
-    "type": "classification",
-    "category": 2,
-    "category_name": "SIM swap fraud",
-    "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Congratulations! MTN has gifted you 2 CashTokens. You now stand a chance to WIN N5,000 - N100,000,000 in the Friday draws. For more info dial *6700*8#",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Legitimate MTN CashToken notification. *6700*8# is the real MTN CashToken USSD code. MTN CashToken is a genuine loyalty rewards programme. No link or credential request. [Reclassified to scam per researcher review.]"
-  },
-  {
-    "id": "SA-RW-S054",
-    "type": "classification",
-    "category": 2,
-    "category_name": "SIM swap fraud",
-    "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: ALL Glo services in one APP! Recharge, borrow, gift, share data, track usage with Glo Cafe App. Download: Android: bit.ly/3zQUZRA, iOS: apple.co/3o60s4v",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Legitimate Glo Café app promotional SMS. Glo Café is a real Glo app. Links go to Google Play (bit.ly shortener) and Apple App Store (apple.co is the official Apple shortener). [Reclassified to scam per researcher review.]"
-  },
-  {
-    "id": "SA-RW-S055",
-    "type": "classification",
-    "category": 2,
-    "category_name": "SIM swap fraud",
-    "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Congratulations! MTN has gifted you 1 CashToken. You now stand a chance to WIN N5,000 - N100,000,000 in the Friday draws. For more info dial *6700*8#",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Legitimate MTN CashToken notification (1 token variant). Same real programme as above. Official USSD code. No link or credential request. [Reclassified to scam per researcher review.]"
-  },
-  {
-    "id": "SA-RW-S001",
-    "type": "classification",
-    "category": 3,
-    "category_name": "Identity theft and credential compromise",
-    "channel": "in-app",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: \"Your account has issues, send your BVN and other accounts details to us, for verification\"",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: BVN and account detail harvesting via banking notification impersonation."
-  },
-  {
-    "id": "SA-RW-S018",
-    "type": "classification",
-    "category": 3,
-    "category_name": "Identity theft and credential compromise",
-    "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: We've sent you an otp kindly send it and receive 200k",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: OTP harvesting with cash incentive. Very common Nigerian SMS scam: fraudster triggers OTP and asks victim to share it for a reward."
-  },
-  {
-    "id": "SA-RW-S021",
-    "type": "classification",
-    "category": 3,
-    "category_name": "Identity theft and credential compromise",
-    "channel": "WhatsApp",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Hi Good afternoon,\nThis emmanuel ola for zenith bank, we notice a on going service in your account, kindly send us your bank details through this number you are been contacted with.\nBVN\nCARD NUMBER",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Zenith Bank impersonation via WhatsApp requesting BVN and card number. Poor grammar is characteristic of real scam messages."
-  },
-  {
-    "id": "SA-RW-S032",
-    "type": "classification",
-    "category": 3,
-    "category_name": "Identity theft and credential compromise",
-    "channel": "Facebook",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: You will receive a code now, send it to me to help setup your account",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: OTP/account recovery code harvesting via Facebook. Impersonates a service setup request. Very common Nigerian scam pattern."
-  },
-  {
-    "id": "SA-RW-S036",
-    "type": "classification",
-    "category": 3,
-    "category_name": "Identity theft and credential compromise",
-    "channel": "in-app",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Dear Customer,\n\nWe noticed an issue with your newly activated bank account. To prevent temporary restrictions on your account, please verify your ATM card immediately.\n\nKindly reply with:\n• The last 4 digits on your card\n• Your account details for verification\n\nFailure to comply within 30 minutes may result in account suspension.",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: ATM card detail and account credential harvesting. Uses bullet format to appear official. 30-minute suspension threat."
-  },
-  {
-    "id": "SA-RW-S016",
-    "type": "classification",
-    "category": 4,
-    "category_name": "Fake fintech and bank platform impersonation",
-    "channel": "WhatsApp",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Opay is giving out 5,000 to their customers. Click the link below to get yours.",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: OPay giveaway impersonation with phishing link. Authentic Nigerian fintech platform impersonation pattern."
-  },
-  {
-    "id": "SA-RW-S020",
-    "type": "classification",
-    "category": 4,
-    "category_name": "Fake fintech and bank platform impersonation",
-    "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: For fast and reliable money with ease register at the vartech.com,fund your wallet and start sending today",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Fake fintech platform promotion asking users to fund a wallet. Unverified domain."
-  },
-  {
-    "id": "SA-RW-S029",
-    "type": "classification",
-    "category": 4,
-    "category_name": "Fake fintech and bank platform impersonation",
-    "channel": "WhatsApp",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Free Opay Giveaway! Click opay-giveaway.xyz to participate in free 50000 Naira Giveaway!",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: OPay giveaway with lookalike domain. Lookalike domain (opay-giveaway.xyz). Direct and authentic fintech impersonation."
-  },
-  {
-    "id": "SA-RW-S046",
-    "type": "classification",
-    "category": 4,
-    "category_name": "Fake fintech and bank platform impersonation",
-    "channel": "Instagram",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Shopping like a billionaire\n( big brand luxury goods)\nwith global free shipping within 7-9 days\naccepting returns and exchanges.\n\nPlease follow me: @luxury.kandy36 @luxury.kandy34\nWhatsapp:\nhttps://wa.me/message/VS6Q4FXDKLTUE1",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Luxury goods reseller Instagram DM with WhatsApp redirect. Could be a genuine small business or a fake goods/advance payment scam. WhatsApp redirect for purchases is a common fraud pattern. [Reclassified to scam per researcher review.]"
-  },
-  {
-    "id": "SA-RW-S024",
-    "type": "classification",
-    "category": 5,
-    "category_name": "Investment scams and Ponzi schemes",
-    "channel": "Email",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: From: Google/Microsoft Ai Vulnerability Rewards Program (VRP).\nAddress: 1600 Amphitheatre Parkway Mountain View, CA 94043, USA.\nDate: 05/29/2026\nDear Sir/Madam,\nYOU HAVE BEEN REWARDED WITH $75,000 GOOGLE/MICROSOFT AI VULNERABILITY REWARDS PROGRAM {VRP}\nBoth Google and Microsoft operate dedicated programs for security researchers.",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Fake Google/Microsoft VRP reward email. Impersonates real security research programs to claim large cash reward."
-  },
-  {
-    "id": "SA-RW-S031",
-    "type": "classification",
-    "category": 5,
-    "category_name": "Investment scams and Ponzi schemes",
-    "channel": "WhatsApp",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: I've put $8 million into this account, and this really will be the last time I send you money. I'm so grateful for all the years you've been by my side, but it's time to close this chapter. Please, promise me you'll take good care of our son. I've started a new family now, and we shouldn't stay in touch.",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Romance/inheritance scam via WhatsApp. Emotional manipulation with large sum. Designed to elicit response and advance fee payment."
-  },
-  {
-    "id": "SA-RW-S033",
-    "type": "classification",
-    "category": 5,
-    "category_name": "Investment scams and Ponzi schemes",
-    "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Mr musa received 100k tap on this link to get yours",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Social proof SMS scam using a named beneficiary. Brief, direct, and uses peer pressure. Authentic Nigerian SMS pattern."
-  },
-  {
-    "id": "SA-RW-S037",
-    "type": "classification",
-    "category": 5,
-    "category_name": "Investment scams and Ponzi schemes",
-    "channel": "WhatsApp",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: I'm Favor chatting from Lagos\nI come across your contact on WhatsApp group chat.i will like to teach you something that bring money if you promise to give me 30 percentage on your first withdrawal…??\nWatch out the video first and see what am talking about, but you must promise me 30% after you have withdrawn",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Investment/pyramid scheme recruitment via WhatsApp. Informal Lagos-based opener. 30% commission promise. Authentic Nigerian tone and phrasing."
-  },
-  {
-    "id": "SA-RW-S039",
-    "type": "classification",
-    "category": 5,
-    "category_name": "Investment scams and Ponzi schemes",
-    "channel": "Email",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: 𝗬𝗼𝘂 𝗿𝗲𝗰𝗲𝗶𝘃𝗲𝗱 𝗮 𝗱𝗶𝗿𝗲𝗰𝘁 𝗱𝗲𝗽𝗼𝘀𝗶𝘁𝗲𝗱 𝗼𝗳 💲13963.99\nYou received a direct deposited of $13,963.99",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Fake direct deposit email with bold Unicode text formatting. Large specific amount designed to create urgency and entice response."
-  },
-  {
-    "id": "SA-RW-S042",
-    "type": "classification",
-    "category": 5,
-    "category_name": "Investment scams and Ponzi schemes",
-    "channel": "Instagram",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Just so simple steps below to be part of Apprentice + Flip & Sharp Entry Private!\n\nRegister Under Exness & Open Trading Account:\nhttps://one.exnesstrack.org/a/nxm1axppeo\n\nIb Code: nxm1axppeo\n\nChange IB Under Exness:\n1. Login to Your personal area\nhttps://extrading.market/",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Exness IB referral via Instagram. Exness is a real broker but this is likely an unauthorised affiliate recruitment pitch. Suspicious referral code structure and second non-official domain. [Reclassified to scam per researcher review.]"
-  },
-  {
-    "id": "SA-RW-S045",
-    "type": "classification",
-    "category": 5,
-    "category_name": "Investment scams and Ponzi schemes",
-    "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: > _Hi, I saw your profile and liked your smile. I'm based in UK/Canada. Can we be friends? I want to send you a gift…_",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Romance scam opening via SMS. No financial request yet but classic opener for advance fee or investment fraud. Diaspora framing is common. [Reclassified to scam per researcher review.]"
-  },
-  {
-    "id": "SA-RW-S050",
-    "type": "classification",
-    "category": 5,
-    "category_name": "Investment scams and Ponzi schemes",
-    "channel": "X (Twitter)",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Doctors told me cancer is incurable. I have decided to travel alone and bid farewell to this world in silence. I have no children. My only regret is not being able to spend this life with you. You were my first love and will live forever in my heart. I leave behind a precious legacy. I hope this friend will benefit you.",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Inheritance/legacy scam opening on X. Emotional manipulation. Dying person narrative is a classic advance fee prelude. No direct financial request yet. [Reclassified to scam per researcher review.]"
-  },
-  {
-    "id": "SA-RW-S051",
-    "type": "classification",
-    "category": 5,
-    "category_name": "Investment scams and Ponzi schemes",
-    "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Your phone is a fortune machine. Text POW to 5288, press 1 & unlock Smartphone, cash & airtime on Playzone. Join instantly, win massively today!",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Premium SMS subscription scam. Dialling/texting shortcodes incurs charges. Exaggerated prize claims. Could be a real but deceptive VAS or a full scam subscription service. [Reclassified to scam per researcher review.]"
-  },
-  {
-    "id": "SA-RW-S052",
-    "type": "classification",
-    "category": 5,
-    "category_name": "Investment scams and Ponzi schemes",
-    "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: 2.5M could be YOURS today! Dial 20232*1# to play GoldRush and make today your lucky day!",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Premium SMS lottery subscription. USSD shortcode charges on dial. ₦2.5M prize claim is misleading. Real carrier VAS but deceptive marketing practices. [Reclassified to scam per researcher review.]"
-  },
-  {
-    "id": "SA-RW-S004",
-    "type": "classification",
-    "category": 7,
-    "category_name": "Fake job offer scams",
-    "channel": "X (Twitter)",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Part-time short-video job where VIP tiers (1–3) set the volume.\nEarnings scale with consistency; a common target is 100 USD+ daily.\nVIP levels 1–3 are available to scale your daily workload.\nIt's recruitment for work, not a trading offer.\nCrypto-only top-up; supported networks include TRC20 and BEP20.",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Fake part-time job with crypto top-up requirement. Common task-based fraud on X."
-  },
-  {
-    "id": "SA-RW-S006",
-    "type": "classification",
-    "category": 7,
-    "category_name": "Fake job offer scams",
-    "channel": "WhatsApp",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Good day! This is ZAHRA from TEMU ONLINE SHOPPING. We would like to offer you a ONLINE JOB (Home based), Joining is totally free\nAre you available ?",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: TEMU impersonation fake online job offer. Common WhatsApp recruitment scam."
-  },
-  {
-    "id": "SA-RW-S009",
-    "type": "classification",
-    "category": 7,
-    "category_name": "Fake job offer scams",
-    "channel": "Telegram",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Sending you access to Google Workspace. Please review all documents, terms of cooperation and etc. After that please let us know if you are ready to work with us and if everything suit you\nWorkspace: sites.google.com/view/workspace-studio\nEmail: team@24bets.io\nAccessKey: LUZ9-KFB4-C9SR",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Fake job/work collaboration via Telegram with Google Sites phishing link. Gambling company email domain."
-  },
-  {
-    "id": "SA-RW-S022",
-    "type": "classification",
-    "category": 7,
-    "category_name": "Fake job offer scams",
-    "channel": "WhatsApp",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Hi Good day 👋\nAre you looking for flexible online job that you can earn 80K-150K Naira with no registration or payment required, and you'll receive full support from start to finish.\nShall I send you the full details?\n\nBest regards\nTEMU NIGERIA",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: TEMU Nigeria fake job offer WhatsApp. Claims no payment required but leads to investment. Multiple respondents reported this exact message."
-  },
-  {
-    "id": "SA-RW-S023",
-    "type": "classification",
-    "category": 7,
-    "category_name": "Fake job offer scams",
-    "channel": "Telegram",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Im here to offer you a work-from-home freelance opportunities. All you have to do is to view our product on Temu.\nBut frist, please answer\n\n📌 How old are you?",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: TEMU Telegram fake freelance job. Age-gating question is first step to target working-age adults. Typo in 'frist' is authentic."
-  },
-  {
-    "id": "SA-RW-S043",
-    "type": "classification",
-    "category": 7,
-    "category_name": "Fake job offer scams",
-    "channel": "X (Twitter)",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: So I'm actually working on a Web3 project that is inspired by Brawl Stars but combined with P2E elements so that you can earn while you play, and I noticed you were interacting with different projects on here. I was wondering if you'd be interested to work part-time on this project?",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Web3 P2E project recruitment via X. No immediate harmful request. Casual opener designed to seem organic. P2E projects can be legitimate or scams. [Reclassified to scam per researcher review.]"
-  },
-  {
-    "id": "SA-RW-S003",
-    "type": "classification",
-    "category": 8,
-    "category_name": "Government and relief fund impersonation",
-    "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: You're among the 10 winners to our 1,000,000 naira award. Click on this link to claim it.",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Prize/lottery scam with claim link. Classic Nigerian SMS scam pattern."
-  },
-  {
-    "id": "SA-RW-S005",
-    "type": "classification",
-    "category": 8,
-    "category_name": "Government and relief fund impersonation",
-    "channel": "WhatsApp",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: You have won 3,000,000 naira, click this link to provide your information for a door-door delivery.",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: ₦3,000,000 prize scam requesting personal information via WhatsApp link."
-  },
-  {
-    "id": "SA-RW-S007",
-    "type": "classification",
-    "category": 8,
-    "category_name": "Government and relief fund impersonation",
-    "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Hello dear, You have been gifted #86,000 from \"FGN\" for the Youth Empowerment, ordered by Ahmed Tinubu; quickly call Mr Andrew on 07046573632 to be Credited.",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: FGN Youth Empowerment impersonation. Uses president name and unofficial contact number. Authentic Nigerian government scam."
-  },
-  {
-    "id": "SA-RW-S008",
-    "type": "classification",
-    "category": 8,
-    "category_name": "Government and relief fund impersonation",
-    "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: President Tinubu is giving each household N100,000 call Mr. Salihu to get in touch with the details.",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Presidential household grant scam with unofficial contact. Authentic Nigerian political impersonation."
-  },
-  {
-    "id": "SA-RW-S015",
-    "type": "classification",
-    "category": 8,
-    "category_name": "Government and relief fund impersonation",
-    "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Your number ?<+447437885017?> has been drawn for today's ?1,000 Cash Drop. You are currently in the Top Slot. Claim here: eredesi.com/D5NPFNL",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: UK-format prize SMS with lookalike domain. Garbled formatting around phone number is typical of spoofed sender ID."
-  },
-  {
-    "id": "SA-RW-S017",
-    "type": "classification",
-    "category": 8,
-    "category_name": "Government and relief fund impersonation",
-    "channel": "WhatsApp",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Federal government is giving out grants to households. Click the link to apply",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Federal government grant impersonation via WhatsApp. Brief and generic, relies on economic hardship."
-  },
-  {
-    "id": "SA-RW-S019",
-    "type": "classification",
-    "category": 8,
-    "category_name": "Government and relief fund impersonation",
-    "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Congratulations you have been selected for President Bola Ahmed Tinubu relief fund of FIFTY THOUSAND NAIRA to claim your prize contact..............",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Presidential relief fund scam. Uses president full name and ₦50,000 prize. Authentic pattern."
-  },
-  {
-    "id": "SA-RW-S025",
-    "type": "classification",
-    "category": 8,
-    "category_name": "Government and relief fund impersonation",
-    "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: You have been pre selected to win up to 1,000,000 nairia. wnload the singa app to claim offer",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: App download prize scam. Misspellings of 'naira' and 'download' are authentic. Unknown 'singa' app is malware vector."
-  },
-  {
-    "id": "SA-RW-S035",
-    "type": "classification",
-    "category": 8,
-    "category_name": "Government and relief fund impersonation",
-    "channel": "SMS",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: *FG ₦185,000 NATIONAL FAMILY SUPPORT ALLOWANCE REGISTRATION IS ONGOING*\n\nDue to high level of complaints from Nigeria families, *President Bola Ahmed Tinubu* have urge that the Minister of Humanitarian Affairs and Poverty Alleviation *Prof. Nentawe Goshwe Yilwatda* should open the NATIONAL FAMILY SUPPORT ALLOWANCE registration for all Nigerian families. All family that register will receive ₦185,000 to support their families.",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Highly authentic FG palliative scam. Uses correct minister name and ministry. ₦185,000 amount and WhatsApp formatting (*bold*) are authentic. High-quality government impersonation."
-  },
-  {
-    "id": "SA-RW-S038",
-    "type": "classification",
-    "category": 8,
-    "category_name": "Government and relief fund impersonation",
-    "channel": "Email",
-    "message": "Classify the following message as scam, suspicious, or safe and briefly explain your reasoning.\n\nMessage: Attn: Funds Beneficiary,\n\nWith the ongoing abandoned/scam victim compensation payment exercise conducted by the U.S Dept of the Treasury, a memo has been sent to its consulate global offices to henceforth advise every foreign fund beneficiary to present their details for Supervisory approval and onward release of their funds.",
-    "label": "scam",
-    "target_behaviour": "classify_scam",
-    "notes": "Real-world: Advance fee fraud (419) email impersonating US Department of Treasury. Classic abandoned funds scam targeting Nigerian recipients."
   }
 ]

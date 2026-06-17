@@ -21,8 +21,8 @@ except ModuleNotFoundError:
     from scripts.response_recorder import RawResponsePayload, save_raw_response
 
 
-MODEL_NAME = "llama-3.1-8b"
-API_MODEL_NAME = "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo"
+MODEL_NAME = "llama-3-8b-lite"
+API_MODEL_NAME = "meta-llama/Meta-Llama-3-8B-Instruct-Lite"
 TOGETHER_BASE_URL = "https://api.together.xyz/v1"
 TOGETHER_API_KEY_ENV = "TOGETHER_API_KEY"
 

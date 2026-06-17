@@ -75,7 +75,7 @@ def sample_prompts(public_path: str, private_path: str | None = None, n: int = N
             generation.sort_values("category")
             .groupby("category")
             .first()
-            .reset_index(drop=True)
+            .reset_index(drop=False)
             .head(5)
         )
         samples.extend(gen_sample.to_dict("records"))
