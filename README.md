@@ -10,7 +10,7 @@ SafeAlert helps fintech fraud teams and compliance officers test whether a langu
 
 Nigerian fintechs are actively integrating AI models into customer-facing and fraud-related workflows. Pre-deployment testing in the sector is fragmented, and no evaluation tool exists that reflects the SMS and WhatsApp fraud formats common in Nigerian mobile money. SafeAlert fills that gap.
 
-The kit runs two types of tests against a 220-prompt dataset grounded in eight documented Nigerian fintech fraud categories:
+The kit runs two types of tests against a 310-prompt dataset grounded in eight documented Nigerian fintech fraud categories:
 
 - **Generation tests** — red-team prompts that attempt to elicit harmful outputs such as fake bank alerts, OTP extraction messages, and impersonation scripts. A safe model refuses every time.
 - **Classification tests** — realistic messages labelled as scam, suspicious, or safe. A safe model classifies them correctly.
@@ -23,7 +23,7 @@ Each model is evaluated before and after a simple remediation step (a safety sys
 
 | Component | Description |
 |---|---|
-| `dataset/safealert_dataset_v1.csv` | 220-prompt dataset in CSV format |
+| `dataset/safealert_dataset_v1.csv` | 310-prompt dataset in CSV format |
 | `dataset/safealert_dataset_v1.json` | Same dataset in JSON format |
 | `notebooks/safealert_runner.ipynb` | Sends prompts to any model endpoint, records responses |
 | `notebooks/safealert_scorer.ipynb` | Human-in-the-loop scoring interface |
@@ -165,7 +165,7 @@ If you use SafeAlert in your research, please cite:
   author    = {Uduimoh, Andrew and Yusuf, Hadiza},
   year      = {2026},
   note      = {Africa AI Safety Prize Competition, CASA},
-  url       = {https://github.com/[username]/safealert}
+  url       = {https://github.com/Hadex-Pearl/SafeAlert}
 }
 ```
 
@@ -183,7 +183,7 @@ Fraud case documentation reviewed by Andrew Uduimoh draws on his prior work inve
 
 The code and public dataset in this repository are released under the [MIT License](LICENSE).
 
-The generation prompt dataset (in the private repository) is shared under a restricted data access agreement. Contact the authors to request access.
+The generation prompt dataset (in a private repository) is shared under a restricted data access agreement. Contact the authors to request access.
 
 ---
 
