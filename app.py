@@ -147,7 +147,7 @@ html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
 
 /* Tab styling */
 .stTabs [data-baseweb="tab-list"] {
-    gap: 12px; border-bottom: 2px solid #E8E8E8;
+    gap: 18px; border-bottom: 2px solid #E8E8E8;
 }
 .stTabs [data-baseweb="tab"] {
     font-weight: 500; color: #888;
