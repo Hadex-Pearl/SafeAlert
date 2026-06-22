@@ -493,6 +493,21 @@ def tab_scorer():
             csv_default = f"results/scored/{stem}-scored.csv"
 
         scored_csv = st.text_input("Output scored CSV path", value=csv_default)
+        scored_csv_path = str(ROOT / scored_csv) if scored_csv and not Path(scored_csv).is_absolute() else scored_csv
+        already_scored = count_scored(scored_csv_path) if scored_csv_path else 0
+        st.markdown(f"""
+        <div class="metric-card" style="margin: 8px 0 14px 0; text-align:left">
+            <div class="metric-label">Number of scored</div>
+            <div class="metric-value" style="font-size:28px">{already_scored}</div>
+        </div>
+        """, unsafe_allow_html=True)
+        start_from = st.number_input(
+            "Start from",
+            min_value=0,
+            value=already_scored,
+            step=1,
+            help="Record index to start scoring from. Defaults to the number of rows already written to the scored CSV.",
+        )
 
         if st.button("📂 Load File", type="primary"):
             if not selected_file:
@@ -502,13 +517,12 @@ def tab_scorer():
                                        else selected_file)
                 if not records:
                     st.error(f"No records found in {selected_file}")
+                elif int(start_from) > len(records):
+                    st.error(f"Start from index {int(start_from)} is greater than total records ({len(records)}).")
                 else:
-                    already = count_scored(str(ROOT / scored_csv) if not Path(scored_csv).is_absolute()
-                                           else scored_csv)
                     st.session_state.s_records = records
-                    st.session_state.s_csv = str(ROOT / scored_csv) if not Path(scored_csv).is_absolute() \
-                                             else scored_csv
-                    st.session_state.s_index = already
+                    st.session_state.s_csv = scored_csv_path
+                    st.session_state.s_index = int(start_from)
                     st.session_state.s_loaded = True
                     reset_verdict()
                     st.rerun()

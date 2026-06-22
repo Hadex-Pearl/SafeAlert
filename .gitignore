@@ -7,3 +7,6 @@ results/raw/
 results/scored/
 dataset/private/
 context.md
+
+.DS_Store
+*/.DS_Store
