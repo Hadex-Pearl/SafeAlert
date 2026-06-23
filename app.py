@@ -360,106 +360,191 @@ def tab_overview():
 # ══════════════════════════════════════════════════════════════════════════════
 def tab_runner():
     st.markdown("### Run Pilot Evaluation")
-    st.caption("Sends prompts to the model API and saves raw responses to results/raw/")
+    st.caption("Configure your model, then send all 310 prompts and save the responses.")
 
-    # API key status
-    openai_key = os.getenv("OPENAI_API_KEY", "")
-    together_key = os.getenv("TOGETHER_API_KEY", "")
+    # ── Step 1: Model configuration ───────────────────────────────────────────
+    st.markdown("#### Step 1 — Configure your model")
 
-    with st.expander("🔑 API Key Status", expanded=not (openai_key and together_key)):
-        c1, c2 = st.columns(2)
-        with c1:
+    PROVIDER_URLS = {
+        "OpenAI": "https://api.openai.com/v1",
+        "Together AI": "https://api.together.xyz/v1",
+        "Groq": "https://api.groq.com/openai/v1",
+        "Other (OpenAI-compatible)": "",
+    }
+    PROVIDER_MODELS = {
+        "OpenAI": "gpt-4o-mini",
+        "Together AI": "meta-llama/Meta-Llama-3-8B-Instruct-Lite",
+        "Groq": "llama-3.1-8b-instant",
+        "Other (OpenAI-compatible)": "",
+    }
+
+    # Initialise session state
+    for k, v in [("sa_provider", "OpenAI"), ("sa_api_key", ""), ("sa_base_url", ""),
+                  ("sa_model_str", ""), ("sa_configured", False)]:
+        if k not in st.session_state:
+            st.session_state[k] = v
+
+    provider = st.selectbox(
+        "Model provider",
+        options=list(PROVIDER_URLS.keys()),
+        index=list(PROVIDER_URLS.keys()).index(st.session_state.sa_provider),
+        key="sa_provider",
+    )
+
+    col_key, col_url = st.columns(2)
+    with col_key:
+        api_key_input = st.text_input(
+            "API key",
+            type="password",
+            placeholder="Paste your API key here",
+            value=st.session_state.sa_api_key,
+            help="Obtained from your model provider's dashboard. Treated as a password — not stored or logged.",
+        )
+    with col_url:
+        base_url_input = st.text_input(
+            "Base URL",
+            value=st.session_state.sa_base_url or PROVIDER_URLS.get(provider, ""),
+            placeholder="https://api.yourprovider.com/v1",
+            help="The web address the kit sends requests to. Auto-filled for known providers.",
+        )
+
+    model_str_input = st.text_input(
+        "Model string",
+        value=st.session_state.sa_model_str or PROVIDER_MODELS.get(provider, ""),
+        placeholder="e.g. gpt-4o-mini",
+        help="The exact identifier for the model you want to test. Check your provider's model list.",
+    )
+
+    if st.button("✓ Save model configuration", use_container_width=False):
+        if not api_key_input.strip():
+            st.error("API key cannot be empty.")
+        elif not base_url_input.strip():
+            st.error("Base URL cannot be empty.")
+        elif not model_str_input.strip():
+            st.error("Model string cannot be empty.")
+        else:
+            st.session_state.sa_api_key = api_key_input.strip()
+            st.session_state.sa_base_url = base_url_input.strip()
+            st.session_state.sa_model_str = model_str_input.strip()
+            st.session_state.sa_configured = True
+            # Inject into environment so subprocess inherits them
+            os.environ["OPENAI_API_KEY"] = api_key_input.strip()
+            os.environ["TOGETHER_API_KEY"] = api_key_input.strip()
+            os.environ["SA_BASE_URL"] = base_url_input.strip()
+            os.environ["SA_MODEL_NAME"] = model_str_input.strip()
             st.markdown(
-                f"**OpenAI:** {'✅ Configured' if openai_key else '❌ Not found — add OPENAI_API_KEY to .env'}"
+                '<div class="banner-success">✓ Model configuration saved.</div>',
+                unsafe_allow_html=True,
             )
-        with c2:
-            st.markdown(
-                f"**Together AI:** {'✅ Configured' if together_key else '❌ Not found — add TOGETHER_API_KEY to .env'}"
-            )
+
+    if st.session_state.sa_configured:
+        st.markdown(
+            f'<div style="font-size:13px;color:var(--color-text-secondary);margin-top:6px">'
+            f'Configured: <b>{st.session_state.sa_model_str}</b> via {st.session_state.sa_base_url}</div>',
+            unsafe_allow_html=True,
+        )
 
     st.markdown("---")
 
-    c1, c2 = st.columns(2)
-    with c1:
-        model = st.radio(
-            "Model",
-            options=["gpt4o", "llama"],
-            format_func=lambda x: "GPT-4o mini (OpenAI)" if x == "gpt4o" else "Llama 3 8B Lite (Together AI)",
-            horizontal=True,
-        )
-    with c2:
-        run_type = st.radio(
-            "Run type",
-            options=["pre_remediation", "post_remediation"],
-            format_func=lambda x: "Pre-remediation (no system prompt)" if x == "pre_remediation"
-                                  else "Post-remediation (safety system prompt)",
-            horizontal=True,
-        )
+    # ── Step 2: Run settings ──────────────────────────────────────────────────
+    st.markdown("#### Step 2 — Choose run type")
+
+    # Determine which script model key to use based on provider
+    model_key = "gpt4o" if provider == "OpenAI" else "llama"
+
+    run_type = st.radio(
+        "Run type",
+        options=["pre_remediation", "post_remediation"],
+        format_func=lambda x: "Pre-remediation — no system prompt (run this first)"
+                              if x == "pre_remediation"
+                              else "Post-remediation — safety system prompt applied (run after pre)",
+        horizontal=False,
+    )
 
     st.markdown("---")
 
-    public_path = st.text_input("Public dataset path", value="dataset/public/safealert_dataset_v1_public.csv")
-    private_path = st.text_input("Private dataset path", value="dataset/private/safealert_dataset_v1_private.csv")
+    # ── Step 3: Run ───────────────────────────────────────────────────────────
+    st.markdown("#### Step 3 — Run the evaluation")
 
-    col_dry, col_run = st.columns([1, 2])
+    public_path = "dataset/public/safealert_dataset_v1_public.csv"
+    private_path = "dataset/private/safealert_dataset_v1_private.csv"
 
-    log_area = st.empty()
+    if not st.session_state.sa_configured:
+        st.info("Complete Step 1 (save your model configuration) before running.")
+    else:
+        log_area = st.empty()
+        col_dry, col_run = st.columns([1, 2])
 
-    with col_dry:
-        if st.button("🔍 Dry Run (validate only)", use_container_width=True):
-            with st.spinner("Validating..."):
-                result = subprocess.run(
-                    [sys.executable, "scripts/run_pilot.py",
-                     "--dataset", public_path, "--model", model,
-                     "--run-type", run_type, "--dry-run"],
-                    capture_output=True, text=True, cwd=str(ROOT)
-                )
-            output = result.stdout + result.stderr
-            if result.returncode == 0:
-                log_area.markdown('<div class="banner-success">✓ Validation passed. Ready to run.</div>',
-                                  unsafe_allow_html=True)
-            else:
-                log_area.markdown(f'<div class="banner-error">✗ Validation failed.<br><pre>{output}</pre></div>',
-                                  unsafe_allow_html=True)
+        with col_dry:
+            if st.button("🔍 Validate setup (dry run)", use_container_width=True):
+                with st.spinner("Validating..."):
+                    env = {**os.environ,
+                           "OPENAI_API_KEY": st.session_state.sa_api_key,
+                           "TOGETHER_API_KEY": st.session_state.sa_api_key}
+                    result = subprocess.run(
+                        [sys.executable, "scripts/run_pilot.py",
+                         "--dataset", public_path, "--model", model_key,
+                         "--run-type", run_type, "--dry-run"],
+                        capture_output=True, text=True, cwd=str(ROOT), env=env,
+                    )
+                if result.returncode == 0:
+                    log_area.markdown(
+                        '<div class="banner-success">✓ Setup validated. Ready to run.</div>',
+                        unsafe_allow_html=True,
+                    )
+                else:
+                    log_area.markdown(
+                        f'<div class="banner-error">✗ Validation failed.<br>'
+                        f'<pre style="font-size:12px">{result.stdout + result.stderr}</pre></div>',
+                        unsafe_allow_html=True,
+                    )
 
-    with col_run:
-        if st.button("▶️ Run Pilot (both datasets)", type="primary", use_container_width=True):
-            if not (openai_key or together_key):
-                st.error("No API keys configured. Add them to your .env file.")
-            else:
+        with col_run:
+            if st.button("▶️ Run evaluation (310 prompts)", type="primary", use_container_width=True):
+                env = {**os.environ,
+                       "OPENAI_API_KEY": st.session_state.sa_api_key,
+                       "TOGETHER_API_KEY": st.session_state.sa_api_key,
+                       "SA_BASE_URL": st.session_state.sa_base_url,
+                       "SA_MODEL_NAME": st.session_state.sa_model_str}
                 output_box = st.empty()
                 all_output: list[str] = []
+                last_returncode = 0
 
-                for label, dataset in [("public", public_path), ("private", private_path)]:
-                    st.info(f"Running {label} dataset ({dataset})...")
+                for label, dataset in [("classification (150 prompts)", public_path),
+                                        ("generation (160 prompts)", private_path)]:
+                    st.info(f"Running {label}...")
                     proc = subprocess.Popen(
                         [sys.executable, "scripts/run_pilot.py",
-                         "--dataset", dataset, "--model", model, "--run-type", run_type],
+                         "--dataset", dataset, "--model", model_key, "--run-type", run_type],
                         stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
-                        text=True, cwd=str(ROOT),
+                        text=True, cwd=str(ROOT), env=env,
                     )
                     for line in proc.stdout:
                         all_output.append(line)
                         output_box.code("".join(all_output[-30:]), language="")
                     proc.wait()
+                    last_returncode = proc.returncode
 
-                if proc.returncode == 0:
-                    st.success("✓ Pilot run complete. Find your results in results/raw/")
+                if last_returncode == 0:
+                    st.success("✓ Evaluation complete. Go to the Score Responses tab to score your results.")
                 else:
-                    st.error("Run finished with errors. Check the output above.")
+                    st.error("Run finished with errors. Check the output above or see Troubleshooting in the guide.")
 
-    # Show existing output files
+    # ── Existing output files ─────────────────────────────────────────────────
     raw_dir = ROOT / "results" / "raw"
     if raw_dir.exists():
         files = sorted(raw_dir.glob("*.jsonl"))
         if files:
             st.markdown("---")
-            st.markdown("**Existing output files**")
+            st.markdown("**Completed runs**")
             rows = []
             for f in files:
-                lines = sum(1 for l in f.open() if l.strip())
-                rows.append({"File": f.name, "Records": lines,
-                             "Status": "✅ Complete (310)" if lines == 310 else f"⚠️ {lines} lines"})
+                lines = sum(1 for ln in f.open() if ln.strip())
+                rows.append({
+                    "File": f.name,
+                    "Records": lines,
+                    "Status": "✅ Complete (310)" if lines == 310 else f"⚠️ {lines} / 310",
+                })
             st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
 
 
