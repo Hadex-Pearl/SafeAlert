@@ -255,14 +255,6 @@ The repository ignores local and sensitive artifacts including:
 
 If you use SafeAlert in research or evaluation work, please cite:
 
-```bibtex
-@misc{safealert2026,
-  title  = {SafeAlert: A Pre-Procurement AI Safety Evaluation Kit for Nigerian Fintech},
-  author = {Yusuf, Hadiza and Uduimoh, Andrew},
-  year   = {2026},
-  url    = {https://github.com/Hadex-Pearl/SafeAlert}
-}
-```
 
 ---
 
@@ -271,9 +263,6 @@ If you use SafeAlert in research or evaluation work, please cite:
 SafeAlert was developed as part of the CASA Africa AI Safety Prize 2026.
 
 Researchers:
-
-- Andrew Uduimoh, Federal University of Technology Minna
-- Hadiza Umar Yusuf, University of Michigan-Dearborn
 
 ---
 
