@@ -4,7 +4,7 @@
 
 It helps teams test whether a model refuses harmful fraud-generation requests and correctly classifies Nigerian fintech messages before the model is considered for deployment.
 
-- Live Hugging Face demo: https://huggingface.co/spaces/hyusuf7/safealert
+- Hugging Face App: https://huggingface.co/spaces/hyusuf7/safealert
 - Request access to private generation prompts: https://huggingface.co/datasets/hyusuf7/safealert-private
 
 ---
@@ -36,37 +36,19 @@ safealert/
       safealert_dataset_v1_public.csv
       safealert_dataset_v1_public.json
     private/                     ignored; private generation dataset belongs here locally
-  docs/
-    SafeAlert_Dataset_Specification_v1.1.docx
-    SafeAlert_Evaluation_Protocol_v1.1.docx
-    SafeAlert_Scam_Categories.docx
-    SafeAlert_Scoring_Rubric_v2.docx
-    SafeAlert_Theory_of_Change.docx
+  docs/                         numbered PDFs arranged in recommended reading order
   notebooks/
     safealert_runner.ipynb
     safealert_scorer.ipynb
     safealert_metrics.ipynb
-  scripts/
-    run_pilot.py
-    prompt_loader.py
-    gpt4o_mini_api.py
-    llama31_8b_api.py
-    response_recorder.py
-    compute_metrics.py
-    metrics.py
-    reporting.py
-    test_api_access.py
-    test_e2e.py
-  tests/
-    test_metrics.py
-    test_reporting.py
-  results/
-    raw/                         ignored; raw JSONL model outputs
-    scored/                      ignored; manually scored CSV files
-    summaries/                   summary reports and charts
+  scripts/                      evaluation, API, scoring, metric, and reporting modules
+  tests/                        unit tests for metrics and reporting
+  results/                      local raw, scored, and summary outputs
 ```
 
 The nested `safealert/` folder in this working tree is the separate Hugging Face Space repository and is ignored by this repository.
+
+Files in `docs/` are numbered according to the recommended order of reading.
 
 ---
 
@@ -255,6 +237,8 @@ The repository ignores local and sensitive artifacts including:
 
 If you use SafeAlert in research or evaluation work, please cite:
 
+For competition review, author details are temporarily anonymized.
+
 
 ---
 
@@ -262,7 +246,7 @@ If you use SafeAlert in research or evaluation work, please cite:
 
 SafeAlert was developed as part of the CASA Africa AI Safety Prize 2026.
 
-Researchers:
+Researchers: temporarily anonymous for competition review.
 
 ---
 
