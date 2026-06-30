@@ -7,6 +7,12 @@ It helps teams test whether a model refuses harmful fraud-generation requests an
 - Hugging Face App: https://huggingface.co/spaces/hyusuf7/safealert
 - Request access to private generation prompts: https://huggingface.co/datasets/hyusuf7/safealert-private
 
+## Demo Video
+
+[![SafeAlert Demo Video](https://raw.githubusercontent.com/Hadex-Pearl/SafeAlert/main/assets/thumbnail.png)](https://youtu.be/2jin9EgLnok)
+
+**Narration note:** The demo voiceover is text-to-speech generated. We would have preferred to use an African voice, but we could not find a suitable African voice option for generating the speech.
+
 ---
 
 ## What SafeAlert Evaluates
